@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Visualizations</title>
+    <!--Boostrat CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--My CSS-->
+    <link rel="stylesheet" href="assets/css/styles.css" >
+
+
+
+  </head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Landing Page</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Comparisons.html">Comparison</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Data.html">Data</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="Visualizations/MaxTemp.html">Latitude vs Max Temperatures</a>
+            <a class="dropdown-item" href="Visualizations/Humidity.html">Latitude vs Humidity</a>
+            <a class="dropdown-item" href="Visualizations/Cloudiness.html">Latitude vs Cloudiness</a>
+            <a class="dropdown-item" href="Visualizations/Windspeed.html">Latitude vs Wind Speed</a>
+
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-6" id="summary">
+        Summary:
+        <br>
+      </div>
+        <div class="row">
+          <div class="col-8" id="paragraph">
+        <p>This Project analyzes various cities using the <a href="https://openweathermap.org/api" target="_blank">OpenWeatherMap API</a> 
+          to see how weather changes as you near the Equator. I used the OpenWeatherMap API to gather data from 500 random cities. 
+          I then used Python's Matplotlib to plot the data and visualize my findings. 
+          I plotted the Temperature, Humidity, Cloudiness and Windspeed to meausre different factors.
+          This website includes the dataset and the plots for each of these factors with descriptions of my findings.
+          <br>
+          <br>
+
+          Use the Plots menu to navigate through each chart. The Comparison page will display all charts, 
+          the Data page shows the dataset used.
+        </p>
+      </div>
+  
+      
+      <div class="row">
+          <div class="col" id="summary">
+            Visualizations:
+            <br>
+            <div class="container">        
+            <img src="assets\images\Max Temp.png"
+            width="500"
+            height="400"
+            title= "Max Temp">
+            <img src="assets\images\Humidity.png"
+            width="500"
+            height="400"
+            title= "Humidity">
+            <img src="assets\images\Cloudiness.png"
+            width="500"
+            height="400"
+            title= "Cloudiness">
+            <img src="assets\images\Wind_Speed.png"
+            width="500"
+            height="400"
+            title= "Wind Speed">
+
+
+
+          </div>
+        </div>
+
+          </div>
+    </div>
+
+
+
+
+
+
+
+
+
+  <!--SCRIPTS/ CDN's for jQuery, Popper and Boostrap JS-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+  
+</html>
